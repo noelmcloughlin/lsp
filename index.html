@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Mapping Assignment 3</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Qgis2Web<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#webmap1" onclick="toggleMenu();">Webmap1</a></li>
+            <li><a href="#webmap2" onclick="toggleMenu();">Webmap2</a></li>
+            <li><a href="#webmap3" onclick="toggleMenu();">Webmap3</a></li>
+            <li><a href="#webmap4" onclick="toggleMenu();">Webmap4</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <section>
+            <div class="content">
+                <h2>QGIS Web Mapping Assignment 3</h2>
+                <a href="#menu" class="btn">Maps</a>
+            </div>
+        </section>
+    </section>
+    <section class="about" id="about">
+        <h2 class="titleText"><span>A</span>bout my Submission</h2>
+        <div class="row" >
+            <div class="col50">
+                <p>The Web Mapping Assignment 3 (25%) requires creating a Website to publish various Web Maps generated using the QGIS ecosystem.</p><br>
+                <p>I have created four Web Maps using QGIS Desktop.</p><br>
+                <p>The Website was written in HTML5 and CSS, based on a nice tutorial called <em></em><a href="https://www.youtube.com/watch?v=ac5nmWOkBEY" target="_blank">"Complete Responsive Website from Scratch using Html CSS & Javascript | Mobile Friendly Website"</a></em> on Youtube.</p><br>
+                <p>My web hosting is GitHub Pages.  I was unable to use Infinityweb.net due to technical issue (Error 404 accessing some tile servers, garbled map).</p><br>
+                <p>For each map I give a brief context and mention any problems I encountered with QGIS. QGIS2WEB is a fantastic plugin with nuanaces, glitches, and bugs.</p><br>
+                <p>Use the menus to navigate the Website.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img alt="" src="images/gmit.jpeg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">My <span>Maps</span></h2>
+            <p>This gallery shows images of my four Web Maps included in this submission.  Select "View All Maps" to see the actual maps.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/webmap1.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Webmap 1</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/webmap2.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Webmap 2</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/webmap3.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Webmap 3</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/webmap4.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Webmap 4</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#webmap1" class="btn">View All Maps</a>
+        </div>
+    </section>
+    <section class="about" id="webmap1">
+        <div class="row" >
+            <div class="col20">
+                <h2 class="titleText"><span>W</span>ebmap 1</h2>
+                <p>This Web Map is a field survey of Native Irish Trees along a popular loop walk near my home.  The Geospatial data was collected using the <em>Input</em> MobileApp, and uploaded to the cloud using <em>Mergin</em> service.</p><br><br>
+                <p>Before working on this map I improved the quality of the QGIS project which I created for GIS1 module.</p>
+            </div>
+            <div class="col80">
+                <div class="webmap1">
+                    <iframe src="https://noelmcloughlin.github.io/qgis_webmaps/webmap1/" title="Webmap for Native Trees on Slí na Meacain"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="webmap2">
+        <div class="row" >
+            <div class="col20">
+                <h2 class="titleText"><span>W</span>ebmap 2</h2>
+                <p>For the National Parks and Wildlife Service (NPWS) subject, I used data for County Leitrim.</p><br><br>
+                <p>I experimented with including HTML in the <em>Abstract</em> and noted the abstract is collapsed into an <em>[i]</em> symbol if HTML is done certain way.</p>
+            </div>
+            <div class="col80">
+                <div class="webmap2">
+                    <iframe src="https://noelmcloughlin.github.io/qgis_webmaps/webmap2/" title="Webmap for Leitrim Natural Heritage sites"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="webmap3">
+        <div class="row" >
+            <div class="col20">
+                <h2 class="titleText"><span>W</span>ebmap 3</h2>
+                <p>This is a webmap of data produced by the <mark>Leitrim Sweathouse Project / Teach Allais na Liatroma</mark> project, co-ordinated by Aidan Harte, an archaeologists, and Heritage Officer for County Leitrim.</p><br><br>
+                <p>This was my most ambitious Web Mapping project and here are some issues I saw:</p>
+                <ol>
+                    <li>QGIS2WEB webmaps do not display labels.</li>
+                    <li>Web Host (i.e. InfinityFree) needs connectivity to Tile Service.</li>
+                    <li>Adding Layer Search broke my map.</li>
+                    <li>I had many issues with Arch Inventory SVG symbols.</li>
+                </ol>
+            </div>
+            <div class="col80">
+                <div class="webmap3">
+                    <iframe src="https://noelmcloughlin.github.io/qgis_webmaps/webmap3/" title="Webmap for Leitrim Sweathouse project"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="webmap4">
+        <div class="row" >
+            <div class="col20">
+                <h2 class="titleText"><span>W</span>ebmap 4</h2>
+                <p>This Web map shows fast food points of interest in Greater Dublin Area.</p><br><br>
+                <p>I completed this as part of a GIS Web Mapping Tutorial class with GIMT.</p><br><br>
+                <p>It was one of the first QGIS Web Maps I created so was very simple.</p>
+            </div>
+            <div class="col80">
+                <div class="webmap4">
+                    <iframe src="https://noelmcloughlin.github.io/qgis_webmaps/webmap4/" title="Webmap for Fast Food in Dublin"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">My GIS <span>Software</span></h2>
+            <p>This is a gallery of GIS software that I used to create this project.
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/gis_sw1.png">
+                </div>
+                <div class="text">
+                    <h3>Software 1</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/gis_sw2.png">
+                </div>
+                <div class="text">
+                    <h3>Software 2</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/gis_sw3.png">
+                </div>
+                <div class="text">
+                    <h3>Software 3</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/gis_sw4.png">
+                </div>
+                <div class="text">
+                    <h3>Software 4</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="title">
+            <h2 class="titleText">My <span>Testimonials</span></h2>
+            <p>Here is some testimonials and comments from GMIT Lecturers.
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/test1.jpg"/>
+                </div>
+                <div class="text">
+                    <p>Assignment 1a: "Well done. I will grade the website itself later, once all students have submitted."</p>
+                    <h3>Pearse O'Donnell</h3>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imgBx">
+                <img alt="" src="images/test1.jpg"/>;
+            </div>
+            <div class="text">
+                <p>Assignment 1b: "This is a relatively simplistic website. It contains three web pages and uses a limited number of HTML elements. Overall I would have liked to have seen more effort for this assignment, make use of more of the HTML elements such as tables, lists etc".</p>
+                <h3>Pearse O'Donnell</h3>
+            </div>
+        </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img alt="" src="images/test1.jpg"/>;
+                </div>
+              <div class="text">
+                    <p>Assignment 2: "Assignment 2: "Good effort, content is sparse on some of the pages. I would have liked to see more content on most of the site pages."</p>
+                    <h3>Pearse O'Donnell</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText">C<span>ontact Us</span></h2>
+            <p>My contact form (not working).
+            </p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send"/>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2021 Noel McLoughlin</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
