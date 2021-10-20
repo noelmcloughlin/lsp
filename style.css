@@ -249,25 +249,25 @@ section {
 }
 
 /* SOFTWARE */
-.expert .content {
+.software .content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.expert .content .box {
+.software .content .box {
     width: 250px;
     margin: 15px;
     /* border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0.0.0.0.08); */
 }
-.expert .content .box .imgBx {
+.software .content .box .imgBx {
     position: relative;
     width: 100%;
     height: 300px;
 }
-.expert .content .box .imgBx img {
+.software .content .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -275,14 +275,18 @@ section {
     height: 100%;
     object-fit: cover;
 }
-.expert .content .box .text {
+.software .content .box .text {
     padding: 15px 0 5px;
 }
-.expert .content .box .text h3 {
+.software .content .box .text h3 {
     font-weight: 400;
     color: #111;
 }
 /* TESTIMONIALS */
+.testimonials {
+    background: url(images/bg2.jpeg);
+    background-size: cover;
+}
 .testimonials .content {
     display: flex;
     justify-content: center;
@@ -309,8 +313,8 @@ section {
 }
 .testimonials .content .box .imgBx img {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
@@ -319,7 +323,7 @@ section {
     text-align: center;
 }
 .testimonials .content .box .text p {
-    color: #666;
+    color: #c4c4c4;
     font-style: italic;
 }
 .testimonials .content .box .text h3 {
@@ -331,7 +335,7 @@ section {
 }
 /* CONTACT */
 .contact {
-    background: url(bg3.jpg);
+    background: url(images/bg3.jpeg);
     background-size: cover;
 }
 .contactForm {
@@ -429,12 +433,12 @@ section {
         width: 40px;
         height: 40px;
         background-size: 30px;
-        background: url(menu.png) no-repeat center;
+        background: url(images/menu.png) no-repeat center;
         cursor: pointer;
     }
     .menuToggle.active {
         background-size: 25px;
-        background: url(close.png) no-repeat center;
+        background: url(images/close.png) no-repeat center;
     }
     .banner .content h2 {
         font-size: 3em;
