@@ -287,6 +287,9 @@ section {
     background: url(images/bg2.jpeg);
     background-size: cover;
 }
+.testimonials .titleText {
+    color: #111;
+}
 .testimonials .content {
     display: flex;
     justify-content: center;
