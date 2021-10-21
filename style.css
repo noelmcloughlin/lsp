@@ -315,7 +315,7 @@ section {
     position: relative;
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -323,7 +323,7 @@ section {
     text-align: center;
 }
 .testimonials .content .box .text p {
-    color: #c4c4c4;
+    color: #666;
     font-style: italic;
 }
 .testimonials .content .box .text h3 {
