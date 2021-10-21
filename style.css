@@ -239,8 +239,9 @@ section {
     padding: 15px 0 5px;
 }
 .menu .content .box .text h3 {
-    font-weight: 400;
     color: #111;
+    font-weight: 400;
+    text-align: center;
 }
 
 .menu .title .btn {
@@ -279,8 +280,9 @@ section {
     padding: 15px 0 5px;
 }
 .software .content .box .text h3 {
-    font-weight: 400;
     color: #111;
+    font-weight: 400;
+    text-align: center;
 }
 /* TESTIMONIALS */
 .testimonials {
