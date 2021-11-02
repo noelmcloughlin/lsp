@@ -1,4 +1,7 @@
 
+/* normalize css */
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css)
+
 /* https://www.w3schools.com/css/css_font_google.asp */
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Poppins:200,300,400,500,600,700,800,900&display=swap');
 * {
@@ -91,6 +94,73 @@ header .logo span {
 }
 header.sticky .logo {
     color: #111;
+}
+header .navigation .selected-lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    color: #111;
+}
+header .navigation .lang-menu {
+    margin-top: 0px;
+    padding: 0;
+    position: relative;
+    color: #111;
+}
+header .navigation .lang-menu .selected-lang:before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 24px;
+    background-image: url(images/en.png);
+    background-repeat: no-repeat;
+}
+header .navigation .lang-menu ul {
+    margin: 0px;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+header .navigation .lang-menu:hover ul {
+    display: block;
+}
+header .navigation .lang-menu ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header .navigation .lang-menu ul li a {
+    width: 120px;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #000;
+}
+header .navigation .lang-menu ul li a:hover {
+    background-color: #f2f2f2;
+}
+header .navigation .lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    margin-right: 5px;
+    background-image: url(images/en.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+header .navigation .lang-menu .en:before {
+    background-image: url(images/en.png);
+}
+header .navigation .lang-menu .ga:before {
+    background-image: url(images/ga.png);
 }
 header .navigation {
     position: relative;
